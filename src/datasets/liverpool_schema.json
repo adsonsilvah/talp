@@ -1,0 +1,69 @@
+{
+  "columns": {
+    "1. Please provide your consent to continue.": "consent",
+    "2. Which faculty do you belong to? (if you are unsure, you can view this word file to help).": "faculty",
+    "3. What level of study are you?": "study_level",
+    "4. How confident are you in writing in an academic manner? (1= not confident, 5=very confident)": "confidence",
+    "5. Prior to this survey, have you heard of any of the following assistive technologies? Select all that apply.": "awareness",
+    "5.a. If you selected Other, please specify:": "other_tools",
+    "6. If you have used, or considered using them before, what purpose was this for? Select as many as apply.": "purposes",
+    "6.a. If you selected Other, please specify:": "other_purposes",
+    "7. How would you feel if another student had used an assistive technology as an academic aid (e.g. for grammar help) to complete a piece of coursework? Select the statement which best matches your point of view.": "grammar_attitude",
+    "7.a. If you selected Other, please specify:": "grammar_reason",
+    "8. How would you feel if another student had used an assistive technology such as Chat GPT to write their entire essay for them? Select the statement which best matches your point of view.": "essay_attitude",
+    "8.a. If you selected Other, please specify:": "essay_reason",
+    "9. How do you think the university should respond to these technologies?": "policy",
+    "9.a. If you selected Other, please specify:": "policy_reason",
+    "10. Can you think of any other ways these technologies would be useful to you in your studies?": "other_study_uses",
+    "11. Do you have any other comments?": "comments"
+  },
+  "categories": {
+    "consent": [
+      "I understand that I am under no obligation to complete this survey and I consent to my answers being anonymously recorded and used for research purposes."
+    ],
+    "faculty": [
+      "Health and Life Sciences",
+      "Not sure",
+      "Humanities and Social Sciences",
+      "Science and Engineering"
+    ],
+    "study_level": [
+      "Undergraduate",
+      "Not sure",
+      "Postgraduate - Taught",
+      "Foundation",
+      "Postgraduate - Research"
+    ],
+    "confidence": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "grammar_attitude": [
+      "Somewhat supportive – I am fine with other students using software if they give credit to the technology in their work.",
+      "Somewhat unsupportive – I think these technologies still have a lot of limitations and I would encourage other students to check the information they find.",
+      "Neutral – I don’t really have an opinion on this. I think it’s up to the individual student to decide to use it/not the use it.",
+      "Supportive – I think in 2023 we should all be using artificial intelligence technologies to make our life easier.",
+      "Unsupportive – I think it is really unfair for other students to use these technologies. People who use these technologies are effectively copying the work of others without giving full credit.",
+      "Other"
+    ],
+    "essay_attitude": [
+      "Unsupportive – I think it is really unfair for other students to use these technologies. People who use these technologies are effectively copying the work of others without giving full credit.",
+      "Somewhat unsupportive – I think these technologies still have a lot of limitations and I would encourage other students to check the information they find.",
+      "Neutral – I don’t really have an opinion on this. I think it’s up to the individual student to decide to use it/not the use it.",
+      "Supportive – I think in 2023 we should all be using artificial intelligence technologies to make our life easier.",
+      "Somewhat supportive – I am fine with other students using software if they give credit to the technology in their work.",
+      "Other"
+    ],
+    "policy": [
+      "Have a university wide policy on when they are and or not appropriate to use",
+      "Let lecturers decide individual policies for individual assignments on when they are or are not appropriate to use",
+      "Allow them to be used however the students wish",
+      "Let departments/faculties decide the policy when they are or are not appropriate to use",
+      "Other",
+      "Ban them entirely"
+    ]
+  }
+}

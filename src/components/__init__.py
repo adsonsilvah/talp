@@ -1,0 +1,1 @@
+"""Elementos compartilhados da interface."""
