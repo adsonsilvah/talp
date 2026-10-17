@@ -9,7 +9,7 @@ Partimos de perguntas de domínio, abstraímos atributos e tarefas, escolhemos c
 | V1 | O que conheciam? Identificar/comparar | Nominal multirresposta → comprimento de barras horizontais, ordenadas por frequência | Comprimento em base comum; todas as opções, inclusive nenhuma e Outro |
 | V2 | Como varia a confiança? Resumir/comparar | Ordinal 1–5 → posição discreta fixa e altura quantitativa | Sem média nem curva que sugira continuidade; agrupamento por faculdade/nível |
 | V3 | Para que utilizaram ou consideraram? Comparar | Nominal multirresposta → barras, possíveis grupos por cor | Não representa uso efetivo; soma pode exceder 100%; não esconder recusas |
-| V4 | Apoio ou autoria integral? Comparar distribuições | Cinco opiniões ordinais → segmentos em ordem, cada cenário a 100% | Azul para apoio, branco central para neutro, vermelho para oposição; Outro branco hachurado no fim, nunca incorporado ao neutro |
+| V4 | Apoio ou autoria integral? Comparar distribuições | Cinco opiniões ordinais → segmentos em ordem, cada cenário a 100% | Azul para apoio, cinza neutro central para neutro, vermelho para oposição; Outro cinza claro hachurado no fim, nunca incorporado ao neutro |
 | V5 | Confiança associa-se à finalidade? Explorar | Ordinal × binário → matriz, luminância azul sequencial para magnitude | Denominador por coluna; sem observações = célula sem cor; hover resolve leitura exata |
 | V6 | Quem deveria definir regras? Identificar/comparar | Política nominal → barras ordenadas ou agrupadas | Todas as seis alternativas; denominador do grupo, nunca total de seleções |
 

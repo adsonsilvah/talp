@@ -1,12 +1,12 @@
 import numpy as np
 import pytest
-from src.charts.awareness import awareness,purposes,confidence_academic
-from src.charts.profile import confidence,faculty,study_level
-from src.charts.academic_integrity import acceptance
-from src.charts.policies import policies
+from src.charts.awareness import awareness,purposes,confidence_academic,tools_academic,repertoire
+from src.charts.profile import confidence,faculty,study_level,faculty_study_level
+from src.charts.academic_integrity import acceptance,attitude_matrix
+from src.charts.policies import policies,policy_integrity
 from src.datasets.schema import ATTITUDES,label
 
-CHARTS=[awareness,purposes,confidence_academic,confidence,faculty,study_level,acceptance,policies]
+CHARTS=[awareness,purposes,confidence_academic,tools_academic,repertoire,confidence,faculty,study_level,faculty_study_level,acceptance,attitude_matrix,policies,policy_integrity]
 
 @pytest.mark.parametrize('chart',CHARTS)
 @pytest.mark.parametrize('mode',['count','percent'])

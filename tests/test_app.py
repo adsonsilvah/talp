@@ -28,7 +28,7 @@ def test_single_page(mode, group):
     result = app.render_dashboard('liverpool2023', [], [], [], mode, group)
     assert len(result.children) == 4
     cards = [card for section in result.children for card in section.children[1].children]
-    assert len(cards) == 8
+    assert len(cards) == 13
     assert all(len(card.children) == 2 for card in cards)
     empty = app.render_dashboard('liverpool2023', ['missing'], [], [], mode, group)
     for section in empty.children:
