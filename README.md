@@ -72,7 +72,7 @@ Kaleido é opcional e separado do servidor:
 .venv/bin/python scripts/export_static.py --format svg --charts v1 v4 v6
 ```
 
-Kaleido 1.x exige Chrome/Chromium e as bibliotecas do sistema desse navegador. `plotly_get_chrome` solicita confirmação para baixar um Chrome compatível; use somente se não existir um compatível. Em ambientes sem essas bibliotecas, peça ao administrador para instalar Chromium pelo Debian. A execução web não depende desses componentes. Neste workspace, o Chrome de teste foi instalado em `.local/chrome/`, ignorado pelo Git, e o script o detecta automaticamente. Para outro executável, use a variável `BROWSER_PATH`.
+Kaleido 1.x exige Chrome/Chromium e as bibliotecas do sistema desse navegador. `plotly_get_chrome` solicita confirmação para baixar um Chrome compatível; use somente se não existir um compatível. Em ambientes sem essas bibliotecas, instale Chromium pelo Debian. A execução web não depende desses componentes. Para indicar outro executável do navegador, use a variável `BROWSER_PATH`.
 
 As figuras são salvas em `exports/`, ignorado pelo Git, com fonte, tamanho do recorte e nota metodológica incorporados. Um README registra os filtros. Exemplo real de recorte:
 

@@ -145,7 +145,7 @@ Nível de estudo é apresentado como nominal: Foundation/graduação/pós-gradua
 | Redação integral · contrários | 1800 / 2.555 | 70.4501% | 70.4% |
 | Política institucional única | 1049 / 2.555 | 41.0568% | 41.1% |
 
-Grammarly: 2260/2.555 (artigo: 88,5%). Os totais por faculdade e os cinco totais fornecidos no enunciado foram verificados pelo script.
+Grammarly: 2260/2.555 (artigo: 88,5%). Os totais por faculdade e os cinco totais de referência foram verificados pelo script.
 
 Apoio gramatical: 1.366/2.555 = 53,4638%, contra 54,1% no artigo (diferença −0,6362 ponto percentual). Excluindo os 33 'Outro', 1.366/2.522 = 54,1634% (54,2% por arredondamento convencional). Isso sugere diferença de denominador e/ou arredondamento, mas não comprova a metodologia publicada. Não se alteraram registros para reproduzir 54,1%. O artigo informa exclusão de 'Other' nas análises ordinais; isso não esclarece integralmente o percentual do resumo.
 
