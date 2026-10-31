@@ -42,7 +42,7 @@ def test_callback_http():
     outputs={'id':'dashboard-content','property':'children'}
     inputs=[{'id':id,'property':prop,'value':value} for id,prop,value in [
         ('dataset','value','liverpool2023'),('faculty','value',['Health and Life Sciences']),
-        ('study-level','value',[]),('confidence','value',[]),('mode','value','percent'),('group','value','none')]]
+        ('mode','value','percent')]]
     response=client.post('/_dash-update-component',json={'output':key,'outputs':outputs,'inputs':inputs,'state':[],'changedPropIds':['faculty.value']})
     assert response.status_code==200
     content = response.get_json()['response']['dashboard-content']['children']
@@ -54,7 +54,7 @@ def test_callback_http():
 
 def test_reset():
     reset=app.reset_filters('liverpool2023',1)
-    assert reset[3:]==([],[],[],'none','percent')
+    assert reset[1:]==([],'percent')
 
 
 def test_production_without_raw(tmp_path):

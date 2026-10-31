@@ -34,26 +34,28 @@ app.layout = layout
 
 
 @app.callback(
-    Output("faculty", "options"), Output("study-level", "options"), Output("confidence", "options"),
-    Output("faculty", "value"), Output("study-level", "value"), Output("confidence", "value"),
-    Output("group", "value"), Output("mode", "value"),
+    Output("faculty", "options"), Output("faculty", "value"), Output("mode", "value"),
     Input("dataset", "value"), Input("reset", "n_clicks"),
 )
 def reset_filters(dataset_id, clicks):
     frame = dataset_frame(dataset_id)
-    return filter_options(frame, "faculty"), filter_options(frame, "study_level"), filter_options(frame, "confidence"), [], [], [], "none", "percent"
+    return filter_options(frame, "faculty"), [], "percent"
 
 
 @app.callback(
     Output("dashboard-content", "children"),
-    Input("dataset", "value"), Input("faculty", "value"), Input("study-level", "value"),
-    Input("confidence", "value"), Input("mode", "value"), Input("group", "value"),
+    Input("dataset", "value"), Input("faculty", "value"), Input("mode", "value"),
 )
-def render_dashboard(dataset_id, faculties, levels, confidence, mode, group):
+def render_dashboard(dataset_id, faculties=None, *args, **kwargs):
+    if len(args) >= 3:
+        mode = args[2]
+    elif len(args) == 1:
+        mode = args[0]
+    else:
+        mode = kwargs.get("mode", "percent")
     dataset = get_dataset(dataset_id)
-    frame = apply_filters(dataset_frame(dataset_id), faculties, levels, confidence)
-    group = group if group in ("faculty", "study_level", "confidence") and dataset.supports(group) else None
-    return render(frame, dataset, mode, group)
+    frame = apply_filters(dataset_frame(dataset_id), faculties=faculties)
+    return render(frame, dataset, mode)
 
 
 @server.get("/healthz")
